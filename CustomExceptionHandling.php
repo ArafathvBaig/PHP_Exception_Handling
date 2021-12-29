@@ -25,6 +25,8 @@ $name = readline('Enter Your Name: ');
 try {
     if ($name != "Arafath Baig") {
         throw new CustomExceptionHandling($name);
+    } else {
+        echo "Welcome to the User:: " . $name;
     }
 } catch (CustomExceptionHandling $e) {
     echo $e->errorMessage();
